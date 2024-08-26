@@ -70,12 +70,67 @@ li a:hover{
     padding: 1px;
     size: 90px;
 }
+/*--Services page--*/
+.services-training{
+    margin-top: 50px;
+    margin-left: 170px;
+    display: flex;
+
+}
+.services-training img{
+    height: 351px;
+    width: 482;
+}
+.training{
+    margin-left: 120px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.services-courses{
+    margin-left: 170px;
+    width: 80%;
+}
+
+.services-courses img{
+    width: 274px;
+    height: 156px;
+    border-radius: 8px;
+}
+.courses{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.course-1{
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    width: 28%;
+    padding: 25px;
+}
+
+.services-installation{
+    margin-left: 170px;
+    display: flex;
+    margin-bottom: 40px;
+}
+.installation{
+    width: 40%;
+}
+.performance{
+    width: 40%;
+    margin-left: 200px;
+}
+
+ol li{
+    padding: 5px;
+}
 /*--Footer--*/
 footer{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     border-top: 1px solid gray;
     background-color: white;
@@ -89,13 +144,16 @@ footer{
     display: grid;
     gap: 8px;
 }
+.footer-links a{
+    color: black;
+}
 .newsletter input[type = email]{
     font-size: larger;
     border: 1px solid;
 }
 .newsletter button{
     border-radius: 1px;
-    padding: 5px;
+    padding: 6px;
     text-decoration: none;
     background-color: gray;
     color: #040316;
