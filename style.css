@@ -61,6 +61,15 @@ li a:hover{
     background-color: #8bc34b;
     border-radius: 10px;
 }
+
+/*--About page--*/
+.heading{
+    text-align: center;
+    background-color: #648063;
+    color: white;
+    padding: 1px;
+    size: 90px;
+}
 /*--Footer--*/
 footer{
     display: flex;
