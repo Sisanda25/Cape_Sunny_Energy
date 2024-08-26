@@ -136,6 +136,7 @@ footer{
 .btn:hover {
     background-color:darkkhaki;
 }
+
 /*home page image*/
 .right-image{
     float: right;
@@ -155,3 +156,15 @@ footer{
     background-color:white;
 }
 
+.paragraph {
+    margin: 0;
+    font-size:21px ;
+    
+}
+.list{
+    font-size: 21px;
+
+}
+ol{
+    list-style: disc;
+}
