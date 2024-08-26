@@ -101,3 +101,63 @@ footer{
     color: #040316;
     border: none;
 }
+
+
+.containerAbout1{
+ 
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    width: 85%;
+    left: 7.5%;
+    position: relative;
+    background-color:white;
+}
+/*
+img{
+    float:right;
+    width:75%;
+    height: 350px;
+    margin-right: 20px;
+  }*/
+
+  .text h1{
+    font-size: 36px;
+  }
+  
+  .boxAbout1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.box {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.box h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: left; /* Aligns the heading to the left */
+}
+
+.box p {
+    font-size: 1em;
+    color: #666;
+    text-align: left; 
+}
