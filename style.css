@@ -61,6 +61,14 @@ li a:hover{
     background-color: #8bc34b;
     border-radius: 10px;
 }
+#log-out{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+#log-out:hover{
+    background-color: #ff5252;
+    color: white;
+}
 
 /*--About page--*/
 .heading{
@@ -125,6 +133,122 @@ li a:hover{
 ol li{
     padding: 5px;
 }
+/*--Log in--*/
+.sign_in{
+    border: 1px solid #D9D9D9;
+    margin-top: 40px;
+    padding: 50px;
+    background-color: white;
+    height: 515px;
+    margin-bottom: 40px;
+}
+form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 900px;
+    min-width: 320px;
+    height: 720px;
+    left: calc(50% - 790px/2);
+    margin: 5px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.sign_in input[type=email]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.sign_in input[type=password]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+    width: 100%;
+}
+.login-button{
+    width: 70%;
+    color: white;
+    background-color: #040316;
+    padding: 6px;
+    border-radius: 8px;
+    margin-top: 30px;
+    align-self: center;
+}
+.form-links a{
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    align-items: start;
+    margin-top: 10px;
+    color: #040316;
+}
+/*--Registration--*/
+.register{
+    border: 1px solid #D9D9D9;
+    margin-top: 40px;
+    padding: 50px;
+    background-color: white;
+}
+.register input[type=text]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.credentials{
+    display: flex;
+    gap: 120px;
+    margin-top: 10px;
+} 
+.register input[type=email]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.register input[type=password]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+    width: max-content;
+}
+.permit{
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+}
+.upload-attachments{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.register textarea{
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    padding: 8px;
+    margin-top: 10px;
+}
+.register-button{
+    width: 70%;
+    color: white;
+    background-color: #040316;
+    padding: 6px;
+    border-radius: 8px;
+    margin-top: 30px;
+    align-self: center;
+}
+
 /*--Footer--*/
 footer{
     display: flex;
