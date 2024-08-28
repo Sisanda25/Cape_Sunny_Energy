@@ -337,3 +337,101 @@ footer{
     position: relative;
     background-color:white;
 }
+
+
+/*dashbord*/
+.dash-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.form-group label {
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+    max-width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+     box-sizing: border-box;
+    font-size: 16px; 
+    }
+    
+    .form-group textarea {
+        width: 100%; 
+        height: 100px; 
+        padding: 10px;
+        box-sizing: border-box; 
+        font-size: 16px;
+        resize: vertical;
+    }
+    
+
+
+.form-group button {
+    background-color:black;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.form-group button:hover {
+    background-color: #648063;
+}
+
+/* Error messages styling */
+.errors {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+.uploaded-documents {
+    margin-top: 20px;
+}
+
+.uploaded-documents h5 {
+    margin-bottom: 10px;
+}
+
+.uploaded-documents ul {
+    list-style: none;
+}
+
+.uploaded-documents li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+/* Hint styling */
+.hint {
+    margin-top: 20px;
+    background-color:white;
+    padding: 10px;
+    border-radius: 4px;
+    color:blue;
+}
+span{
+    color: #ff0000;
+}
