@@ -21,8 +21,69 @@
         <section class="heading">
             <h5>Client registration</h5>
         </section>
+        <form class="register">
+            <label>First name:</label>
+            <input type="text" name="firstname" placeholder="First name" required>
+            <label>Last name:</label>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <label>Email:</label>
+            <input type="text" name="email" placeholder="Email" required>
+            <label>Business name:</label>
+            <input type="text" name="businessname" placeholder="Business name">
+            <fieldset>
+                <legend>VAT Registered</legend>
+                <input type="checkbox" name="registration">Yes
+                <input type="checkbox" name="registration">No
+            </fieldset>
+            <div class="credentials">
+                <div class="creds">
+                    <label>Username:</label><br>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="cred-password">
+                    <label>Password:</label><br>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="permit">
+                <input type="radio" name="permission">
+                <p>I hereby grant you permission to do background check</p>
+            </div>
+            <div class="upload-attachments">
+                <svg xmlns="http://www.w3.org/2000/svg" height="34" width="31" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc--><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 192 320c0 17.7 14.3 32 32 32s32-14.3 32-32l0-210.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 17.7-14.3 32-32 32L96 448c-17.7 0-32-14.3-32-32l0-64z"/></svg>
+                <p>Attach files</p>
+            </div>
+
+            <!-- <label>Address:</label>
+            <textarea name="textarea" rows="8" cols="53" placeholder="Address"></textarea> -->
+            <!-- <label>Tel/Cell number:</label>
+            <input type="tel" name="telephone" placeholder="+27" required>
+            <label>VAT Number:</label> -->
+            <!-- <input type="text" name="VAT"> -->
+            <button class="register-button">Register</button>
+        </form>
     </body>
     <footer>
-        
+        <div class="footer-banner">
+            <img src="images/Logo/Logo.png" id="logo" alt="logo">
+        </div>
+        <div class="footer-links">
+            <p>CSE</p>
+                <a href="#">Company:</a>
+                <a href="#">Get in touch:</a>
+                <a href="#">Sign up:</a>
+        </div>
+        <div class="newsletter">
+            <p>Let's connect:</p>
+            <p><i>Subscribe to our newsletter</i></p>
+            <input type="email" placeholder="Enter your email" name="email">
+            <button>Submit</button>
+        </div>
+        <div>
+            <p>Operating hours:</p>
+            <p>Monday - Friday: 08:00 - 16:30.</p>
+            <p>Saturdays: 08:30 - 12:30.</p>
+            <p>Sundays & Public Holidays: Closed.</p>
+        </div>
     </footer>
 </html>
