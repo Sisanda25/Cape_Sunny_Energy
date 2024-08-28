@@ -395,3 +395,49 @@ img{
     color: #666;
     text-align: left; 
 }
+h2{
+    text-align: center;
+}
+
+.team-row {
+    display: flex; 
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically, in case of height differences */
+    gap: 50px; 
+}
+
+
+.team-row.centered {
+    display: flex; /* Ensures flex properties apply */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically, in case of height differences */
+    gap: 50px; 
+}
+
+
+.team-row figure {
+    text-align: center; /* Center-align text within figures */
+    margin: 10px; /* Space around each figure */
+}
+
+.team-row img {
+    width: 150px; /* Set a fixed width for consistency */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30%; /* Make images circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Add smooth scaling transition */
+}
+
+.team-row img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
+.team-row figcaption {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+    line-height: 1.4; /* Line height for text */
+}
+
