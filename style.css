@@ -344,61 +344,88 @@ footer{
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color:ghostwhite;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
 }
 
-/* Form styling */
-.form-group {
-    margin-bottom: 15px;
-    display: block;
-}
-
-.form-group label {
-    display:block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    width: 100%;
-}
-.form-group input[type="text"],
-.form-group input[type="tel"],
-.form-group input[type="email"],
-.form-group textarea {
-    max-width: 800px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-     box-sizing: border-box;
-    font-size: 16px; 
-    }
-    
-    .form-group textarea {
-        width: 100%; 
-        height: 100px; 
-        padding: 10px;
-        box-sizing: border-box; 
-        font-size: 16px;
-        resize: vertical;
-    }
-    
+/*  ACOUNT Form styling */
 
 
-.form-group button {
+  #account-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap:5px;
+    align-items:center; 
+  }
+
+  /* Style for each form group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style for labels */
+  .form-group label {
+    margin-bottom: 2px; 
+
+  }
+
+  /* Style for input fields and textarea */
+  .form-group input,
+  .form-group textarea {
+    width: 65%; 
+    border:1px solid;
+    border-radius: 8px;
+    gap:5px;
+    height: 30px; 
+
+  }
+
+  /* Style for textarea */
+  .form-group textarea {
+    height: 80px; 
+  }
+  .form-group button {
+    width: 40%;
     background-color:black;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    margin-right: 10px;
-    border-radius: 10px;
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px; 
+    font-size: 16px; 
     cursor: pointer;
-    
+    transition: background-color 0.3s; 
 }
-
 .form-group button:hover {
-    background-color: #648063;
+    background-color:green; }
+.form-group-btn button {
+    width: 40%;
+    background-color:white; 
+    color:black; 
+    border: none; 
+    border-radius: 5px; 
+    padding:5px 10px; 
+    margin: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
+.form-group-btn button:hover {
+    background-color:green; }
+
+.form-group button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+
+}
+  .uploaded-documents {
+    grid-column: span 2; 
+    margin-top: 20px; 
+    width:10%;
+  }
 
 /* Error messages styling */
 .errors {
@@ -422,6 +449,7 @@ footer{
     padding: 10px;
     border: 1px solid #ddd;
     margin-bottom: 5px;
+    width: 20%;
 }
 
 /* Hint styling */
