@@ -440,16 +440,17 @@ footer{
     margin-bottom: 10px;
 }
 
-.uploaded-documents ul {
-    list-style: none;
+.uploaded-documents ol {
+    list-style:circle;
+
 }
 
 .uploaded-documents li {
-    background-color: #f9f9f9;
+    background-color:red;
     padding: 10px;
     border: 1px solid #ddd;
     margin-bottom: 5px;
-    width: 20%;
+    width: 10%;
 }
 
 /* Hint styling */
