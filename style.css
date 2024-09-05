@@ -40,7 +40,6 @@ ul{
     padding: 12px;
     overflow: hidden;
     background-color: white;
-    border-bottom: 1px solid gray;
     list-style-type: none;
 }
 li{
@@ -248,6 +247,25 @@ form{
     border-radius: 8px;
     margin-top: 30px;
     align-self: center;
+}
+
+/*--Reset password--*/
+.reset-button{
+    margin-top: 30px;
+    align-self: center;
+}
+#cancel{
+    color: black;
+    background-color: aliceblue;
+    padding: 6px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+#reset{
+    color: white;
+    background-color: #040316;
+    padding: 6px;
+    border-radius: 8px;    
 }
 
 /*--Dashboard--*/
