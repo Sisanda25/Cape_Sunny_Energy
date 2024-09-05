@@ -101,3 +101,31 @@ footer{
     color: #040316;
     border: none;
 }
+img{
+    float:left
+      }
+
+      dd {
+         list-style-type: none; /* Remove default list styling */
+         position: relative;
+         margin-left: 1%; /* Space for the circle */
+         padding-left: 15px; /* Space for the circle */
+         line-height: 1.6; /* Adjust line height for readability */
+     }
+     
+     /* Create the black circle */
+     dd::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 8px;
+         height: 8px;
+         background-color: black;
+         border-radius: 50%;
+     }
+
+     .add-space{
+         margin-left: 50%;
+     }
