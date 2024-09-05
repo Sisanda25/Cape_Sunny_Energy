@@ -78,6 +78,83 @@ li a:hover{
     padding: 1px;
     size: 90px;
 }
+.containerAbout1{
+ 
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    width: 85%;
+    left: 7.5%;
+    position: relative;
+    background-color:white;
+}
+/*
+img{
+    float:right;
+    width:75%;
+    height: 350px;
+    margin-right: 20px;
+  }*/
+
+  .text h1{
+    font-size: 36px;
+  }
+  
+  .boxAbout1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.box {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.box h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: left; /* Aligns the heading to the left */
+}
+
+.box p {
+    font-size: 1em;
+    color: #666;
+    text-align: left; 
+}
+h2{
+    text-align: center;
+}
+
+.team-row {
+    display: flex; 
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically, in case of height differences */
+    gap: 50px; 
+}
+
+
+.team-row.centered {
+    display: flex; /* Ensures flex properties apply */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically, in case of height differences */
+    gap: 50px; 
+}
+
 /*--Services page--*/
 .services-training{
     margin-top: 50px;
@@ -314,36 +391,6 @@ footer{
     border: none;
 }
 
-
-img{
-    float:left
-      }
-
-      dd {
-         list-style-type: none; /* Remove default list styling */
-         position: relative;
-         margin-left: 1%; /* Space for the circle */
-         padding-left: 15px; /* Space for the circle */
-         line-height: 1.6; /* Adjust line height for readability */
-     }
-     
-     /* Create the black circle */
-     dd::before {
-         content: "";
-         position: absolute;
-         left: 0;
-         top: 50%;
-         transform: translateY(-50%);
-         width: 8px;
-         height: 8px;
-         background-color: black;
-         border-radius: 50%;
-     }
-
-     .add-space{
-         margin-left: 50%;
-     }
-
 /*home page header*/
 .header {
     position: relative;
@@ -398,7 +445,6 @@ img{
     position: relative;
     background-color:white;
 }
-
 
 /*dashbord*/
 .dash-container {
