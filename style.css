@@ -313,6 +313,37 @@ footer{
     color: #040316;
     border: none;
 }
+
+
+img{
+    float:left
+      }
+
+      dd {
+         list-style-type: none; /* Remove default list styling */
+         position: relative;
+         margin-left: 1%; /* Space for the circle */
+         padding-left: 15px; /* Space for the circle */
+         line-height: 1.6; /* Adjust line height for readability */
+     }
+     
+     /* Create the black circle */
+     dd::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 8px;
+         height: 8px;
+         background-color: black;
+         border-radius: 50%;
+     }
+
+     .add-space{
+         margin-left: 50%;
+     }
+
 /*home page header*/
 .header {
     position: relative;
@@ -348,6 +379,7 @@ footer{
 .btn:hover {
     background-color:darkkhaki;
 }
+
 /*home page image*/
 .right-image{
     float: right;
@@ -367,57 +399,131 @@ footer{
     background-color:white;
 }
 
-.containerAbout1{
- 
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-    padding: 20px;
-    margin-top: 20px;
-    width: 85%;
-    left: 7.5%;
-    position: relative;
-    background-color:white;
-}
-/*
-img{
-    float:right;
-    width:75%;
-    height: 350px;
-    margin-right: 20px;
-  }*/
 
-  .text h1{
-    font-size: 36px;
-  }
-  
-  .boxAbout1 {
-    display: flex;
-    justify-content: space-around;
+/*dashbord*/
+.dash-container {
+    max-width: 800px;
     margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.box {
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
     padding: 20px;
+    background-color:ghostwhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
-.box img {
-    width: 100%;
-    height: auto;
+/*  ACOUNT Form styling */
+
+
+  #account-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap:5px;
+    align-items:center; 
+  }
+
+  /* Style for each form group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style for labels */
+  .form-group label {
+    margin-bottom: 2px; 
+
+  }
+
+  /* Style for input fields and textarea */
+  .form-group input,
+  .form-group textarea {
+    width: 65%; 
+    border:1px solid;
+    border-radius: 8px;
+    gap:5px;
+    height: 30px; 
+
+  }
+
+  /* Style for textarea */
+  .form-group textarea {
+    height: 80px; 
+  }
+  .form-group button {
+    width: 40%;
+    background-color:black;
+    color: white; 
+    border: none; 
     border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.form-group button:hover {
+    background-color:green; }
+.form-group-btn button {
+    width: 40%;
+    background-color:white; 
+    color:black; 
+    border: none; 
+    border-radius: 5px; 
+    padding:5px 10px; 
+    margin: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+.form-group-btn button:hover {
+    background-color:green; }
+
+.form-group button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+
+}
+  .uploaded-documents {
+    grid-column: span 2; 
+    margin-top: 20px; 
+    width:10%;
+  }
+
+/* Error messages styling */
+.errors {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+.uploaded-documents {
+    margin-top: 20px;
 }
 
+.uploaded-documents h5 {
+    margin-bottom: 10px;
+}
 
-.box h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
-    color: #333;
-    text-align: left; /* Aligns the heading to the left */
+.uploaded-documents ol {
+    list-style:circle;
+
+}
+
+.uploaded-documents li {
+    background-color:red;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    width: 10%;
+}
+
+/* Hint styling */
+.hint {
+    margin-top: 20px;
+    background-color:white;
+    padding: 10px;
+    border-radius: 4px;
+    color:blue;
+}
+span{
+    color: #ff0000;
 }
 
 .box p {
@@ -469,5 +575,5 @@ h2{
     color: #333; /* Text color */
     font-weight: bold; /* Bold text */
     line-height: 1.4; /* Line height for text */
-}
+} 
 
