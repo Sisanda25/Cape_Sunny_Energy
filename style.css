@@ -61,7 +61,7 @@ li a:hover{
     border-radius: 10px;
 }
 #log-out{
-    background-color: #f7f7f7;
+    background-color:#f7f7f7;
     border-radius: 10px;
 }
 #log-out:hover{
@@ -89,6 +89,7 @@ li a:hover{
     left: 7.5%;
     position: relative;
     background-color:white;
+    gap:50px;
 }
 /*
 img{
@@ -108,6 +109,7 @@ img{
     margin: 20px auto;
     width: 90%;
     max-width: 1200px;
+   
 }
 
 .box {
@@ -115,12 +117,13 @@ img{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     padding: 20px;
+   
 }
 
 .box img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+  
 }
 
 
@@ -139,14 +142,12 @@ img{
 h2{
     text-align: center;
 }
-
 .team-row {
     display: flex; 
-    justify-content: center; /* Centers the content horizontally */
+   justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically, in case of height differences */
     gap: 50px; 
 }
-
 
 .team-row.centered {
     display: flex; /* Ensures flex properties apply */
@@ -154,6 +155,35 @@ h2{
     align-items: center; /* Centers the content vertically, in case of height differences */
     gap: 50px; 
 }
+
+
+.team-row figure {
+    text-align: center; /* Center-align text within figures */
+    margin: 10px; /* Space around each figure */
+}
+
+.team-row img {
+    width: 150px; /* Set a fixed width for consistency */
+    height: auto; /* Maintain aspect ratio */
+   /* border-radius: 30%; /* Make images circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Add smooth scaling transition */
+}
+
+.team-row img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
+.team-row figcaption {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+    line-height: 1.4; /* Line height for text */
+} 
+
+
 
 /*--Services page--*/
 .services-training{
@@ -454,7 +484,7 @@ footer{
     background-color:ghostwhite;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    border: 1px solid #D9D9D9;
 }
 
 /*  ACOUNT Form styling */
@@ -465,12 +495,14 @@ footer{
     grid-template-columns: repeat(2, 1fr); 
     gap:5px;
     align-items:center; 
+    
   }
 
   /* Style for each form group */
   .form-group {
     display: flex;
     flex-direction: column;
+   
   }
 
   /* Style for labels */
@@ -483,11 +515,11 @@ footer{
   .form-group input,
   .form-group textarea {
     width: 65%; 
-    border:1px solid;
-    border-radius: 8px;
     gap:5px;
     height: 30px; 
-
+    box-sizing: 8px;
+    border: 3px 8px solid #D9D9D9;
+    
   }
 
   /* Style for textarea */
@@ -560,14 +592,6 @@ footer{
     width: 10%;
 }
 
-/* Hint styling */
-.hint {
-    margin-top: 20px;
-    background-color:white;
-    padding: 10px;
-    border-radius: 4px;
-    color:blue;
-}
 span{
     color: #ff0000;
 }
@@ -581,45 +605,11 @@ h2{
     text-align: center;
 }
 
-.team-row {
-    display: flex; 
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically, in case of height differences */
-    gap: 50px; 
-}
 
 
-.team-row.centered {
-    display: flex; /* Ensures flex properties apply */
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically, in case of height differences */
-    gap: 50px; 
-}
 
 
-.team-row figure {
-    text-align: center; /* Center-align text within figures */
-    margin: 10px; /* Space around each figure */
-}
-
-.team-row img {
-    width: 150px; /* Set a fixed width for consistency */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 30%; /* Make images circular */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow */
-    transition: transform 0.3s ease; /* Add smooth scaling transition */
-}
-
-.team-row img:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover */
-}
 
 
-.team-row figcaption {
-    margin-top: 10px; /* Space between image and text */
-    font-size: 14px; /* Adjust font size */
-    color: #333; /* Text color */
-    font-weight: bold; /* Bold text */
-    line-height: 1.4; /* Line height for text */
-} 
+
 
