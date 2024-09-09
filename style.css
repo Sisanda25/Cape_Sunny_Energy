@@ -61,7 +61,7 @@ li a:hover{
     border-radius: 10px;
 }
 #log-out{
-    background-color: #f7f7f7;
+    background-color:#f7f7f7;
     border-radius: 10px;
 }
 #log-out:hover{
@@ -454,7 +454,7 @@ footer{
     background-color:ghostwhite;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    border: 1px solid #D9D9D9;
 }
 
 /*  ACOUNT Form styling */
@@ -465,12 +465,14 @@ footer{
     grid-template-columns: repeat(2, 1fr); 
     gap:5px;
     align-items:center; 
+    
   }
 
   /* Style for each form group */
   .form-group {
     display: flex;
     flex-direction: column;
+   
   }
 
   /* Style for labels */
@@ -483,11 +485,11 @@ footer{
   .form-group input,
   .form-group textarea {
     width: 65%; 
-    border:1px solid;
-    border-radius: 8px;
     gap:5px;
     height: 30px; 
-
+    box-sizing: 8px;
+    border: 3px 8px solid #D9D9D9;
+    
   }
 
   /* Style for textarea */
@@ -558,6 +560,10 @@ footer{
     border: 1px solid #ddd;
     margin-bottom: 5px;
     width: 10%;
+}
+
+span{
+    color: #ff0000;
 }
 
 .box p {
