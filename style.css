@@ -40,7 +40,6 @@ ul{
     padding: 12px;
     overflow: hidden;
     background-color: white;
-    border-bottom: 1px solid gray;
     list-style-type: none;
 }
 li{
@@ -79,6 +78,83 @@ li a:hover{
     padding: 1px;
     size: 90px;
 }
+.containerAbout1{
+ 
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    width: 85%;
+    left: 7.5%;
+    position: relative;
+    background-color:white;
+}
+/*
+img{
+    float:right;
+    width:75%;
+    height: 350px;
+    margin-right: 20px;
+  }*/
+
+  .text h1{
+    font-size: 36px;
+  }
+  
+  .boxAbout1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.box {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.box h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: left; /* Aligns the heading to the left */
+}
+
+.box p {
+    font-size: 1em;
+    color: #666;
+    text-align: left; 
+}
+h2{
+    text-align: center;
+}
+
+.team-row {
+    display: flex; 
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically, in case of height differences */
+    gap: 50px; 
+}
+
+
+.team-row.centered {
+    display: flex; /* Ensures flex properties apply */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically, in case of height differences */
+    gap: 50px; 
+}
+
 /*--Services page--*/
 .services-training{
     margin-top: 50px;
@@ -250,6 +326,25 @@ form{
     align-self: center;
 }
 
+/*--Reset password--*/
+.reset-button{
+    margin-top: 30px;
+    align-self: center;
+}
+#cancel{
+    color: black;
+    background-color: aliceblue;
+    padding: 6px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+#reset{
+    color: white;
+    background-color: #040316;
+    padding: 6px;
+    border-radius: 8px;    
+}
+
 /*--Dashboard--*/
 .dashboard{
     border: 1px solid #D9D9D9;
@@ -295,36 +390,6 @@ footer{
     color: #040316;
     border: none;
 }
-
-
-img{
-    float:left
-      }
-
-      dd {
-         list-style-type: none; /* Remove default list styling */
-         position: relative;
-         margin-left: 1%; /* Space for the circle */
-         padding-left: 15px; /* Space for the circle */
-         line-height: 1.6; /* Adjust line height for readability */
-     }
-     
-     /* Create the black circle */
-     dd::before {
-         content: "";
-         position: absolute;
-         left: 0;
-         top: 50%;
-         transform: translateY(-50%);
-         width: 8px;
-         height: 8px;
-         background-color: black;
-         border-radius: 50%;
-     }
-
-     .add-space{
-         margin-left: 50%;
-     }
 
 /*home page header*/
 .header {
@@ -380,7 +445,6 @@ img{
     position: relative;
     background-color:white;
 }
-
 
 /*dashbord*/
 .dash-container {
@@ -498,7 +562,6 @@ img{
     width: 10%;
 }
 
-
 span{
     color: #ff0000;
 }
@@ -553,4 +616,166 @@ h2{
     font-weight: bold; /* Bold text */
     line-height: 1.4; /* Line height for text */
 } 
+
+
+/*contact page*/
+.container-contact {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    background-color:white;
+}
+
+
+.box-1 {
+  
+    border: 1px solid #ddd;
+    /*border-radius: 8px;*/
+    padding: 50px;
+    width: 55%; /* Adjusts width to fit two boxes side by side */
+    background-color:#8bc34b;
+}
+h3,p{
+    text-align: center;
+}
+
+.box-2{
+    background-color:#D9D9D9;
+    padding: 50px;
+    width: 55%;
+    
+}
+.contact-info {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.contact-item1 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+}
+.contact-item2 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+}
+.contact-item2 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+.contact-item3 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color:red;
+}
+.contact-item4 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color:palevioletred;
+}
+.contact-item5 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+}
+
+
+
+.contact-item span {
+    font-size: 16px;
+    color: black;
+}
+/*box2 contact*/
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+input[type="text"],
+input[type="email"]
+ {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+
+.contact button{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color:green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    
+}
+/*input-box*/
+
+button.input-box:hover {
+    background-color: green;
+}
+
+
+
+.box-1 h3, .box-2 h3 {
+    color: black;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Styles for paragraphs in the boxes */
+.box-1 p, .box-2 p {
+    color: blue;
+    align-items: center;
+}
+
+/* Responsive design: stacks boxes vertically on small screens */
+@media (max-width:700px) {
+    .container-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-1, .box-2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
 
